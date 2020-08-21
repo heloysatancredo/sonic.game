@@ -1,0 +1,79 @@
+* {
+    background-color:#D6EAF8;
+}
+
+#myCanvas {
+    background-color: white;
+    background-image: url('../img/cloudFinal.png');
+    border: 2px solid #2874A6;
+    border-radius: 10px;
+}
+
+#gameManage {
+    margin-left: 30px;
+}
+
+.title {
+    color: black;
+    font-size: 25px;
+}
+
+#points {
+    color: #239B56;
+    font-size: 35px;
+}
+
+#lives {
+    color: #D68910;
+    font-size: 35px;
+}
+
+#player {
+    text-align: center;
+    margin: auto;
+}
+
+.label {
+    font-size: 34px;
+}
+
+input[type=radio] {
+    height: 2em;
+}
+
+#playerBtn {
+    font-size: 22px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2980B9;
+    color: white;
+}
+
+#sonicDesc {
+    color: #2874A6;
+}
+
+#tailsDesc {
+    color: #D68910;
+    margin: 35px auto;
+}
+
+#game {
+    align-items: center;
+    justify-content: center;
+}
+
+#counter {
+    color: red;
+    font-size: 35px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.menuImgs {
+    height: 35px;
+}
+

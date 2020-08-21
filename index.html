@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sonic Game</title>
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="player">
+        <h1>Welcome to Sonic Game!</h1>
+        <div id="wrap">
+            <div id="instructions">
+                <h2>Instructions:</h2>
+                <p>You have 1 minute to collect 100 points!</p>
+                <p>When you collect 50 points, you gain more 30 seconds.</p>
+                <p>Use the keyboard arrows to play &nbsp;<img class="menuImgs" src="img/keyboard.png"></p>
+                <p>Yellow Rings: 2 points<img class="menuImgs" src="img/yellowRingFinal.png"> | Special Rings: 10 points
+                    <img class="menuImgs" src="img/specialRingFinal.png"></p>
+                <p>Be careful with the enemies! <img src="img/enemyFinal.png">They take your lives away.</p>
+            </div>
+            <div id="choosePlayer">
+                <h2>Please choose your player:</h2>
+                <div id="sonicDesc">
+                    <input type="radio" id="sonic" name="player" value="sonic">
+                    <label for="sonic" class="label">Sonic</label><img class="playerImg" src="img/sonicFinal.png"><br>
+                    <h2>Special skill: Move Up and Move Down</h2>
+                </div>
+                <div id="tailsDesc">
+                    <input type="radio" id="tails" name="player" value="tails">
+                    <label for="tails" class="label">Tails</label><img class="playerImg" src="img/tailsFinal.png"><br>
+                    <h2>Special skill: Shoot Rays at the Enemies</h2>
+                </div>
+            </div>
+        </div>
+        <button id="playerBtn">Start Game</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div id="canvas">
+            <canvas id="myCanvas" width="700px" height="880px" style="height: inherit;">Your browser does not support
+                the HTML5 canvas tag.</canvas>
+        </div>
+        <div id="gameManage">
+            <p>
+                <span class="title">Timer: </span>
+                <span id="counter"></span>
+            </p>
+            <p><span class="title">Points: </span><span id="points"></span></p>
+            <p><span class="title">Lives: </span><span id="lives"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
